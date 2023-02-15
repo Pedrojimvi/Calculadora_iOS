@@ -147,13 +147,11 @@ struct ContentView: View {
         return true
     }
     
-    func formatResult(val : Double) -> String {
-        if(val.truncatingRemainder(dividingBy: 1) == 0) {
-            return String(format: "%.0f", val)
-        }
-        
-        return String(format: "%.2f", val)
+    func formatResult(val: Double) -> String {
+        return String(format: "%g", val)
     }
+
+
 }
 
 struct ContentView_Previews: PreviewProvider {
