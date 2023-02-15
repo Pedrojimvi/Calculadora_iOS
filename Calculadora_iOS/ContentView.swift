@@ -68,7 +68,7 @@ struct ContentView: View {
     
     func buttonColor(_ cell: String) -> Color {
         if(cell == "AC" || cell == "C") {
-            return .green
+            return .red
         }
         
         if(cell == "-" || cell == "=" || operators.contains(cell)) {
