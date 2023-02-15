@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     let grid = [
-        ["AC", "C", "%", "/"],
-        ["7", "8", "9", "X"],
+        ["C", "AC", "%", "/"],
+        ["7", "8", "9", "x"],
         ["4", "5", "6", "-"],
         ["1", "2", "3", "+"],
         [".", "0", "", "="]
     ]
     
-    let operators = ["/", "+", "X", "%"]
+    let operators = ["/", "+", "x", "%"]
     
     @State var visibleWorkings = ""
     @State var visibleResults = ""
@@ -67,7 +67,7 @@ struct ContentView: View {
     }
     
     func buttonColor(_ cell: String) -> Color {
-        if(cell == "AC" || cell == "C") {
+        if(cell == "C" || cell == "AC") {
             return .red
         }
         
@@ -81,16 +81,16 @@ struct ContentView: View {
     func buttonPressed(cell: String) {
         
         switch (cell) {
-        case "AC":
+        case "C":
             visibleWorkings = ""
             visibleResults = ""
-        case "C":
+        case "AC":
             visibleWorkings = String(visibleWorkings.dropLast())
         case "=":
             visibleResults = calculateResults()
         case "-":
             addMinus()
-        case "X", "/", "%", "+":
+        case "x", "/", "%", "+":
             addOperator(cell)
         default:
             visibleWorkings += cell
@@ -117,7 +117,7 @@ struct ContentView: View {
     func calculateResults() -> String {
         if(validInput()) {
             var workings = visibleWorkings.replacingOccurrences(of: "%", with: "*0.01")
-            workings = workings.replacingOccurrences(of: "X", with: "*")
+            workings = workings.replacingOccurrences(of: "x", with: "*")
             let expression = NSExpression(format: workings)
             let result = expression.expressionValue(with: nil, context: nil) as! Double
             return formatResult(val: result)
