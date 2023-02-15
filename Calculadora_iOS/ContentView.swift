@@ -59,7 +59,7 @@ struct ContentView: View {
         .background(Color.black.ignoresSafeArea())
         .alert(isPresented: $showAlert) {
             Alert(
-                title: Text("Insercción inválida"),
+                title: Text("Operación no válida"),
                 message: Text(visibleWorkings),
                 dismissButton: .default(Text("Vale"))
             )
@@ -133,6 +133,13 @@ struct ContentView: View {
         
         if(operators.contains(last) || last == "-") {
             if(last != "%" || visibleWorkings.count == 1) {
+                return false
+            }
+        }
+        
+        if visibleWorkings.contains("/"), let index = visibleWorkings.lastIndex(of: "/") {
+            let denominator = String(visibleWorkings[visibleWorkings.index(after: index)...])
+            if Double(denominator) == 0 {
                 return false
             }
         }
