@@ -11,8 +11,6 @@
 		AC77ACDE299CF1030019902C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77ACDD299CF1030019902C /* ContentView.swift */; };
 		AC77ACE0299CF10A0019902C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC77ACDF299CF10A0019902C /* Assets.xcassets */; };
 		AC77ACE3299CF10A0019902C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC77ACE2299CF10A0019902C /* Preview Assets.xcassets */; };
-		AC77ACEE299CF10A0019902C /* Calculadora_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77ACED299CF10A0019902C /* Calculadora_iOSTests.swift */; };
-		AC77ACF9299CF10A0019902C /* Calculadora_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77ACF8299CF10A0019902C /* Calculadora_iOSUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC77ACD8299CF1030019902C /* Calculadora_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC77ACD8299CF1030019902C /* Calculadora_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Calculadora_iOS.app; path = "/Users/Guest/Desktop/Calculadora_iOS/build/Debug-iphoneos/Calculadora_iOS.app"; sourceTree = "<absolute>"; };
 		AC77ACDB299CF1030019902C /* Calculadora_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora_iOSApp.swift; sourceTree = "<group>"; };
 		AC77ACDD299CF1030019902C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC77ACDF299CF10A0019902C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC77ACE2299CF10A0019902C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC77ACE4299CF10A0019902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC77ACE9299CF10A0019902C /* Calculadora_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculadora_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC77ACED299CF10A0019902C /* Calculadora_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora_iOSTests.swift; sourceTree = "<group>"; };
-		AC77ACEF299CF10A0019902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC77ACF4299CF10A0019902C /* Calculadora_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculadora_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC77ACF8299CF10A0019902C /* Calculadora_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora_iOSUITests.swift; sourceTree = "<group>"; };
-		AC77ACFA299CF10A0019902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC77ACE9299CF10A0019902C /* Calculadora_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Calculadora_iOSTests.xctest; path = "/Users/Guest/Desktop/Calculadora_iOS/build/Debug-iphoneos/Calculadora_iOSTests.xctest"; sourceTree = "<absolute>"; };
+		AC77ACF4299CF10A0019902C /* Calculadora_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Calculadora_iOSUITests.xctest; path = "/Users/Guest/Desktop/Calculadora_iOS/build/Debug-iphoneos/Calculadora_iOSUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,20 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				AC77ACDA299CF1030019902C /* Calculadora_iOS */,
-				AC77ACEC299CF10A0019902C /* Calculadora_iOSTests */,
-				AC77ACF7299CF10A0019902C /* Calculadora_iOSUITests */,
-				AC77ACD9299CF1030019902C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		AC77ACD9299CF1030019902C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AC77ACD8299CF1030019902C /* Calculadora_iOS.app */,
-				AC77ACE9299CF10A0019902C /* Calculadora_iOSTests.xctest */,
-				AC77ACF4299CF10A0019902C /* Calculadora_iOSUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AC77ACDA299CF1030019902C /* Calculadora_iOS */ = {
@@ -110,24 +91,6 @@
 				AC77ACE2299CF10A0019902C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		AC77ACEC299CF10A0019902C /* Calculadora_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC77ACED299CF10A0019902C /* Calculadora_iOSTests.swift */,
-				AC77ACEF299CF10A0019902C /* Info.plist */,
-			);
-			path = Calculadora_iOSTests;
-			sourceTree = "<group>";
-		};
-		AC77ACF7299CF10A0019902C /* Calculadora_iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AC77ACF8299CF10A0019902C /* Calculadora_iOSUITests.swift */,
-				AC77ACFA299CF10A0019902C /* Info.plist */,
-			);
-			path = Calculadora_iOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +180,7 @@
 				Base,
 			);
 			mainGroup = AC77ACCF299CF1030019902C;
-			productRefGroup = AC77ACD9299CF1030019902C /* Products */;
+			productRefGroup = AC77ACCF299CF1030019902C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -268,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC77ACEE299CF10A0019902C /* Calculadora_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC77ACF9299CF10A0019902C /* Calculadora_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

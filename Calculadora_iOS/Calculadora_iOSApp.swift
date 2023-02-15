@@ -1,8 +1,8 @@
 //
 //  Calculadora_iOSApp.swift
-//  Calculadora_iOS
+//  Shared
 //
-//  Created by Usuario invitado on 15/2/23.
+//  Created by Pedrojimvi on 15/2/23.
 //
 
 import SwiftUI
