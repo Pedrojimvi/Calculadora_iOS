@@ -1,8 +1,7 @@
 //
 //  ContentView.swift
-//  Shared
 //
-//  Created by Pedrojimvi on 15/2/23.
+//  Created by Pedrojimvi and JunZH0 on 15/2/23.
 //
 
 import SwiftUI
@@ -92,6 +91,10 @@ struct ContentView: View {
             addMinus()
         case "x", "/", "%", "+":
             addOperator(cell)
+        case ".":
+            if !visibleWorkings.contains("."){
+                visibleWorkings += cell
+            }
         default:
             visibleWorkings += cell
         }
@@ -125,6 +128,7 @@ struct ContentView: View {
         showAlert = true
         return ""
     }
+    
     func validInput() -> Bool {
         if(visibleWorkings.isEmpty) {
             return false
