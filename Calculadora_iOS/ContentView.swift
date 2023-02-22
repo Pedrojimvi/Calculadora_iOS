@@ -6,6 +6,8 @@
 
 import SwiftUI
 
+var isPeriodAllowed = true
+
 struct ContentView: View {
     let grid = [
         ["C", "AC", "%", "/"],
@@ -83,17 +85,23 @@ struct ContentView: View {
         case "C":
             visibleWorkings = ""
             visibleResults = ""
+            isPeriodAllowed = true
         case "AC":
             visibleWorkings = String(visibleWorkings.dropLast())
+            isPeriodAllowed = true
         case "=":
             visibleResults = calculateResults()
+            isPeriodAllowed = true
         case "-":
             addMinus()
+            isPeriodAllowed = true
         case "x", "/", "%", "+":
             addOperator(cell)
+            isPeriodAllowed = true
         case ".":
-            if !visibleWorkings.contains("."){
+            if  isPeriodAllowed == true {
                 visibleWorkings += cell
+                isPeriodAllowed = false
             }
         default:
             visibleWorkings += cell
